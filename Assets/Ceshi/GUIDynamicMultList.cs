@@ -1,7 +1,7 @@
 ﻿/*
 文件名（File Name）:   NewBehaviourScript.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  #CreateTime#
 */
@@ -15,7 +15,7 @@ public class GUIDynamicMultList : GUIComponentBase
     public delegate void VoidMultList(int index);
     public VoidMultList onClick;
 
-    public int itemSize = 0;//item的宽度或高度
+    public int itemSize = 0;//item的宽度或胡度
     public int dataMinIndex = 0;//数据的起始位置
     public int dataMaxIndex = 0;//数据的终止位置
     public int showItemCount;

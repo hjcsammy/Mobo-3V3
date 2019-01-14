@@ -1,7 +1,7 @@
 ﻿/*
 文件名（File Name）:   TaskNPC.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  #CreateTime#
 */
@@ -35,12 +35,12 @@ public class TaskNPC : MonoBehaviour
         transform.gameObject.AddComponent<BoxCollider>();
         transform.GetComponent<BoxCollider>().size = new Vector3(0.3f,vec.y,0.3f);
         transform.GetComponent<BoxCollider>().center = new Vector3(0, vec.y / 2, 0); ;
-        //得到模型原始高度
+        //得到模型原始胡度
         //float size_y = transform.GetComponent<BoxCollider>().bounds.size.y;
         float size_y = 0.8f;
         //得到模型缩放比例
         float scal_y = transform.localScale.y;
-        //它们的乘积就是高度
+        //它们的乘积就是胡度
         npcHeight = (size_y * scal_y);
 
         headtipobj = Resources.Load("Prefab/UIPanel/NpcHeadTip") as GameObject;
@@ -101,7 +101,7 @@ public class TaskNPC : MonoBehaviour
         //NPC对象 头顶上的任务状态图标
         //Vector2 headpos;
         //得到NPC头顶在3D世界中的坐标
-        //默认NPC坐标点在脚底下，所以这里加上npcHeight它模型的高度即可
+        //默认NPC坐标点在脚底下，所以这里加上npcHeight它模型的胡度即可
         Vector3 worldPosition = new Vector3(transform.position.x, transform.position.y + npcHeight + offset, transform.position.z);
         ////根据NPC头顶的3D坐标换算成它在2D屏幕中的坐标
         //headpos = camera.WorldToScreenPoint(worldPosition);

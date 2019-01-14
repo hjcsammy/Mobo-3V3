@@ -24,7 +24,7 @@ public class BaseHome : MonoBehaviour
 
         if(cs.maxHp == cs.currentHp)
         {
-            Transform effectTrans = cs.transform.FindChild("cureEffect");
+            Transform effectTrans = cs.transform.Find("cureEffect");
             if(effectTrans != null)
                 Destroy(effectTrans.gameObject);
             return;
@@ -35,7 +35,7 @@ public class BaseHome : MonoBehaviour
         {
             if(cs.groupIndex == groupIndex)
             {
-                Transform effectTrans = cs.transform.FindChild("cureEffect");
+                Transform effectTrans = cs.transform.Find("cureEffect");
                 if(effectTrans == null)
                 {
                     GameObject effectGo = Resource.CreatPrefabs("cure", cs.gameObject, Vector3.zero, "Effect/Prefabs/Buff/");
@@ -54,7 +54,7 @@ public class BaseHome : MonoBehaviour
 
     void OnTriggerExit ( Collider other )
     {
-        Transform effectTrans = other.transform.FindChild("cureEffect");
+        Transform effectTrans = other.transform.Find("cureEffect");
         if(effectTrans != null)
             Destroy(effectTrans.gameObject, 0.5f);
     }

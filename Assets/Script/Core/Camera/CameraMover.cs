@@ -5,7 +5,7 @@ public class CameraMover : MonoBehaviour
 
     public float m_fTotalTime = 2.0f;    //运动总时长
     public float m_fRuntime = 0.5f;      //运动时间
-    public float m_fHight = 2.0f;       //高度上的增量
+    public float m_fHight = 2.0f;       //胡度上的增量
     public float m_fAccelerate = 0;     //加速度
 
     public float m_fEndRunTime = 1f;

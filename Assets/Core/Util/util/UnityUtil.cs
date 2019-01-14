@@ -36,7 +36,7 @@ public static class UnityUtil
     {
   
       //  if (trans != null && trans.FindChild(name) != null)
-            return trans.FindChild(name).GetComponent<T>();
+            return trans.Find(name).GetComponent<T>();
   
     }
 

@@ -1,7 +1,7 @@
 /*
 文件名（File Name）:   LotterySend.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  2016-6-20 18:13:32
 */

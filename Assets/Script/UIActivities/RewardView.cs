@@ -1,7 +1,7 @@
 /*
 文件名（File Name）:   RewardView.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  2016-11-3 11:48:18
 */

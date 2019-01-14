@@ -1,7 +1,7 @@
 /*
 文件名（File Name）:   EnumType.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  2016-6-29 14:6:6
 */

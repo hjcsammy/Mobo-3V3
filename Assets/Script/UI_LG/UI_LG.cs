@@ -27,13 +27,13 @@ public class UI_LG : GUIBase
 
     void Start()
     {
-        UI_FightTouch = transform.parent.FindChild("FightTouch").gameObject;
-        UI_Setting = transform.parent.FindChild("UISetting").gameObject;
+        UI_FightTouch = transform.parent.Find("FightTouch").gameObject;
+        UI_Setting = transform.parent.Find("UISetting").gameObject;
 
         itsKGFMapSystem = GameObject.Find("KGFMapSystem").gameObject;
 
-        switchBtn = transform.FindChild("switchBtn").gameObject.transform.GetComponent<GUISingleButton>();
-        KGFmapBtn = transform.FindChild("KGFmapBtn").gameObject.transform.GetComponent<GUISingleButton>();
+        switchBtn = transform.Find("switchBtn").gameObject.transform.GetComponent<GUISingleButton>();
+        KGFmapBtn = transform.Find("KGFmapBtn").gameObject.transform.GetComponent<GUISingleButton>();
 
         switchBtn.onClick= OnSwitchBtnClick;
         KGFmapBtn.onClick = OnKGFmapBtnClick;

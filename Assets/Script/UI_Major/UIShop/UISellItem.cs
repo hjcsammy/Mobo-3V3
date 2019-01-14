@@ -1,7 +1,7 @@
 ﻿/*
 文件名（File Name）:   UISellItem.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  2016-7-2 10:36:3
 */

@@ -81,14 +81,14 @@ public class EquipDevelop : GUIBase {
         starGrid = transform.Find("content/heroicon/Grid").GetComponent<UIGrid>();
         if (content == null)
         {
-            content = transform.FindChild("content");
+            content = transform.Find("content");
         }
         if (equipItemarr == null)
         {
             Transform obj;
             for (int i = 0; i < 6; i++)
             {
-                obj = content.FindChild("Equip_" + (i + 1).ToString());
+                obj = content.Find("Equip_" + (i + 1).ToString());
                 if (obj != null)
                 {
                     equipItemarr[i] = obj.GetComponent<EquipOpItem>();

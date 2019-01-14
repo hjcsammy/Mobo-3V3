@@ -28,8 +28,8 @@ public class UISkillAndGoldHintPanel : GUIBase
 
         UIEventListener.Get(mask.gameObject).onClick += OnMaskClick;
 
-        backbtnLabel = backBtn.transform.FindChild("Label").GetComponent<UILabel>();
-        buybtnLabel = buyBtn.transform.FindChild("Label").GetComponent<UILabel>();
+        backbtnLabel = backBtn.transform.Find("Label").GetComponent<UILabel>();
+        buybtnLabel = buyBtn.transform.Find("Label").GetComponent<UILabel>();
         backBtn.onClick = OnBackBtnClick;
         buyBtn.onClick = OnBuyBtnClick;
     }

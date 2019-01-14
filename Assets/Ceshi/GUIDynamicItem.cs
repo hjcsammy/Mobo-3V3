@@ -1,7 +1,7 @@
 ﻿/*
 文件名（File Name）:   GUIDynamicItem.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  #CreateTime#
 */
@@ -24,7 +24,7 @@ public class GUIDynamicItem : GUIDynamicItemList
         }
         else
         {
-            lable = transform.FindChild("Label").GetComponent<UILabel>();
+            lable = transform.Find("Label").GetComponent<UILabel>();
              lable.text =obj.ToString();
         }
     }

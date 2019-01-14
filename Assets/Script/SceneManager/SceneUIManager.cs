@@ -72,11 +72,11 @@ public class SceneUIManager : MonoBehaviour
                 }
             }
 
-            bloodScreen = transform.FindChild("PanelUIEffects/GamePromptPanel/UIBloodScreen").gameObject;
+            bloodScreen = transform.Find("PanelUIEffects/GamePromptPanel/UIBloodScreen").gameObject;
             // ACTCounter = transform.FindChild("ACTCounter").gameObject;
 
-            if (transform.FindChild("TaskBubble") != null)
-                taskBubble = transform.FindChild("TaskBubble").gameObject;
+            if (transform.Find("TaskBubble") != null)
+                taskBubble = transform.Find("TaskBubble").gameObject;
 
             SwitchBloodScreen(false);
 
@@ -158,7 +158,7 @@ public class SceneUIManager : MonoBehaviour
 
         TowerPoint.gameObject.SetActive(type == SceneType.TP);
         TowerDefence.gameObject.SetActive(false);
-        bossBlood.transform.FindChild("root").gameObject.SetActive(false);
+        bossBlood.transform.Find("root").gameObject.SetActive(false);
 
         if (type == SceneType.TD)
             TowerDefence.ShowUI(true);

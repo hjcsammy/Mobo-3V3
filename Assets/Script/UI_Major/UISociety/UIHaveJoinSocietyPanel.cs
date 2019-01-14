@@ -122,7 +122,7 @@ public class UIHaveJoinSocietyPanel : GUIBase
         }
         else if (SocietyManager.Single().societyStatus == SocietyStatus.President)
         {
-            object[] obj = new object[5] { "确定要退出公会吗？", "退出后会长将有系统指认当前贡献度最高的人，是否确认？", UIPopupType.EnSure, this.gameObject, "PresidentExitSocietyEvent" };
+            object[] obj = new object[5] { "确定要退出公会吗？", "退出后会长将有系统指认当前贡献度最胡的人，是否确认？", UIPopupType.EnSure, this.gameObject, "PresidentExitSocietyEvent" };
             Control.ShowGUI(UIPanleID.UIPopUp, EnumOpenUIType.DefaultUIOrSecond, false, obj);
         }
         //ClientSendDataMgr.GetSingle().GetSocietySend().SendExitSociety(C2SMessageType.ActiveWait);

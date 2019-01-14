@@ -34,33 +34,33 @@ public class UIDeadToReborn : GUIBase {
     {
         if (content == null)
         {
-            content = transform.FindChild("content");
+            content = transform.Find("content");
         }
         if (btnPlaceReborn == null)
         {
-            btnPlaceReborn = content.FindChild("placeReborn");
+            btnPlaceReborn = content.Find("placeReborn");
         }
         if(btnSafeReborn == null)
         {
-            btnSafeReborn = content.FindChild("safeReborn");
+            btnSafeReborn = content.Find("safeReborn");
         }
         if (placeRebornCore == null)
         {
-            Transform obj = btnPlaceReborn.FindChild("count");
+            Transform obj = btnPlaceReborn.Find("count");
 
             if(obj!=null)
             placeRebornCore = obj.GetComponent<UILabel>();
         }
         if (safeRebornCore == null)
         {
-            Transform obj = btnSafeReborn.FindChild("count");
+            Transform obj = btnSafeReborn.Find("count");
 
             if(obj!=null)
             safeRebornCore = obj.GetComponent<UILabel>();
         }
         if(timesafeReborn!=null)
         {
-            Transform obj = btnSafeReborn.FindChild("time");
+            Transform obj = btnSafeReborn.Find("time");
 
             if (obj != null)
                 timesafeReborn = obj.GetComponent<UILabel>();

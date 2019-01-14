@@ -67,8 +67,8 @@ public class EquipPanel : MonoBehaviour
         instance = this;
         for (int i = 1; i <= 6; i++)
         {
-            equip.Add(transform.FindChild("Equip" + i).GetComponent<ItemEquip>());
-            itemEquipDicI.Add(i, transform.FindChild("Equip" + i).GetComponent<ItemEquip>());    //取装备位置
+            equip.Add(transform.Find("Equip" + i).GetComponent<ItemEquip>());
+            itemEquipDicI.Add(i, transform.Find("Equip" + i).GetComponent<ItemEquip>());    //取装备位置
         }
 
         obj = new object[FSDataNodeTable<HeroAttrNode>.GetSingleton().DataNodeList.Count];
@@ -100,7 +100,7 @@ public class EquipPanel : MonoBehaviour
         for (int i = 0; i < ItemEquiplist.Length; i++)
         {
             if (ItemEquiplist[i] == null)
-                ItemEquiplist[i] = transform.FindChild("Equip" + (i + 1).ToString()).GetComponent<ItemEquip>();
+                ItemEquiplist[i] = transform.Find("Equip" + (i + 1).ToString()).GetComponent<ItemEquip>();
         }
 
         advancedBtn = UnityUtil.FindCtrl<UIButton>(gameObject, "AdvancedBtn");

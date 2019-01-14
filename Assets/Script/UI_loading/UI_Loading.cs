@@ -42,7 +42,7 @@ public class UI_Loading : GUIBase
         //else
         //{
         //}
-        transform.FindChild("ProgressBar_liner").gameObject.SetActive(true);
+        transform.Find("ProgressBar_liner").gameObject.SetActive(true);
 
         progressBar = GetComponentInChildren<GUISingleProgressBar>();
         progressBar.onChange = OnProgressBarChange;

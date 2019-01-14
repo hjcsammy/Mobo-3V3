@@ -355,7 +355,7 @@ public class SceneBaseManager : MonoBehaviour
             go = Resource.CreatPrefabs(config.groupIndex == 1 ? "Tower_Blue" : "Tower_Red", parent.gameObject, config.modelPos, GameLibrary.Monster_URL);
             go.transform.localEulerAngles = new Vector3(0, config.modelRot, 0);
             cs = go.GetComponent<CharacterState>();
-            cs.AddHp = go.transform.FindChild("AddHp").gameObject;
+            cs.AddHp = go.transform.Find("AddHp").gameObject;
             cs.addLife = cs.AddHp.GetComponent<MobaAddLife>();
         }
         else

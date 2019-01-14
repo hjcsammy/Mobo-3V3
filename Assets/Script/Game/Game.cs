@@ -1,7 +1,7 @@
 /*
 文件名（File Name）:   Game.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  2017-1-3 15:43:26
 */

@@ -15,7 +15,7 @@ public class ComboCalc : MonoBehaviour
     void Awake()
     {
         _instance = this;
-        if(transform.FindChild("txt"))
+        if(transform.Find("txt"))
         txt = transform.FindComponent<UILabel>("txt");
         ta = this.GetComponent<TweenAlpha>();
         ts = transform.FindComponent<TweenScale>("txt");

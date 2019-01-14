@@ -81,7 +81,7 @@ public class HeroPosEmbattle : MonoBehaviour
         }
         model.transform.localRotation = Quaternion.Euler(0, rota, 0);
         if (z != 0) model.transform.localPosition = new Vector3(0, 0, z);
-        Transform redCircle = model.transform.FindChild("Effect_targetselected01");
+        Transform redCircle = model.transform.Find("Effect_targetselected01");
         if (redCircle != null)
             redCircle.gameObject.SetActive(false);
         NGUITools.SetLayer(model, LayerMask.NameToLayer("UI"));
@@ -131,7 +131,7 @@ public class HeroPosEmbattle : MonoBehaviour
             model.name = modelId + "";
             model.transform.localRotation = Quaternion.Euler(0, rota, 0);
             model.tag = Tag.monster;
-            Transform redCircle = model.transform.FindChild("Effect_targetselected01");
+            Transform redCircle = model.transform.Find("Effect_targetselected01");
             if (redCircle != null)
                 redCircle.gameObject.SetActive(false);
             NGUITools.SetLayer(model, LayerMask.NameToLayer("UI"));

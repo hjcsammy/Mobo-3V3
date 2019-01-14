@@ -15,7 +15,7 @@ public class ToEscapeTrigger : MonoBehaviour
     void Start()
     {
         boxCol = GetComponent<BoxCollider>();
-        effect = transform.FindChild("Particle System").gameObject;
+        effect = transform.Find("Particle System").gameObject;
         navObs = GetComponent<UnityEngine.AI.NavMeshObstacle>();
         effect.gameObject.SetActive(false);
         navObs.enabled = false;

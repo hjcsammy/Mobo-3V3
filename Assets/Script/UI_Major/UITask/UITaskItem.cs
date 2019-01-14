@@ -1,7 +1,7 @@
 ﻿/*
 文件名（File Name）:   UITaskItem.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  #CreateTime#
 */
@@ -21,7 +21,7 @@ public class UITaskItem : GUISingleItemList
 
     protected override void InitItem()
     {
-        btn = transform.FindChild("Btn").GetComponent<GUISingleButton>();
+        btn = transform.Find("Btn").GetComponent<GUISingleButton>();
     }
 
     //这样写有点扯 该写个类的

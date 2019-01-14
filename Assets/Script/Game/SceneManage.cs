@@ -1,7 +1,7 @@
 /*
 文件名（File Name）:   SceneManager.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  2016-10-26 19:16:49
 */

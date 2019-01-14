@@ -65,7 +65,7 @@ public class UIWelfare : GUIBase
         redPoint_2 = transform.Find("RedPoint_2").GetComponent<GUISingleSprite>();
         redPoint_3 = transform.Find("RedPoint_3").GetComponent<GUISingleSprite>();
         redPoint_4 = transform.Find("RedPoint_4").GetComponent<GUISingleSprite>();
-        redPoint_5 = transform.FindChild("RedPoint_5").GetComponent<GUISingleSprite>();
+        redPoint_5 = transform.Find("RedPoint_5").GetComponent<GUISingleSprite>();
         time = TimeManager.Instance.ConvertIntDateTime(Auxiliary.GetNowTime());
         obj[0] = uiSign_in.gameObject;
         obj[1] = getEnergyPanel.gameObject;

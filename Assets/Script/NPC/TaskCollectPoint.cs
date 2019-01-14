@@ -25,11 +25,11 @@ public class TaskCollectPoint : MonoBehaviour
         transform.GetComponent<BoxCollider>().size = new Vector3(0.5f, 0.5f, 0.5f);
         transform.GetComponent<BoxCollider>().center = new Vector3(0, 0, 0.1f);
         nameTrs = transform.Find("name");
-        //得到模型原始高度
+        //得到模型原始胡度
         float size_y = transform.GetComponent<BoxCollider>().bounds.size.y;
         //得到模型缩放比例
         float scal_y = transform.localScale.y;
-        //它们的乘积就是高度
+        //它们的乘积就是胡度
         collectHeight = (size_y * scal_y);
         headtipobj = Resources.Load("Prefab/UIPanel/NpcHeadTip") as GameObject;
         if (collectNameObj == null)
@@ -68,7 +68,7 @@ public class TaskCollectPoint : MonoBehaviour
         //采集物对象 头顶上的任务状态图标
         Vector2 headpos;
         //得到采集物头顶在3D世界中的坐标
-        //默认采集物坐标点在脚底下，所以这里加上collectHeight它模型的高度即可
+        //默认采集物坐标点在脚底下，所以这里加上collectHeight它模型的胡度即可
         Vector3 worldPosition = new Vector3(transform.position.x, transform.position.y + collectHeight + offset, transform.position.z);
         if (nameTrs!=null)
         {

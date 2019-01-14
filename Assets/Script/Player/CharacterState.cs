@@ -53,7 +53,7 @@ public class CharacterState : BaseActorController, IStatusHandler, BattleAgent
     [HideInInspector]
     public CharacterState Summon; // 当前召唤出的英雄
     [HideInInspector]
-    public CharacterState Master; // 如果为召唤英雄，此值保存召唤者
+    public CharacterState Master; // 如果为召唤英雄，此值保存召唤者 
 
     CharacterState _attackTarget;
     public CharacterState attackTarget {
@@ -253,7 +253,7 @@ public class CharacterState : BaseActorController, IStatusHandler, BattleAgent
         emission = GetComponentInChildren<EffectEmission>();
         mCurMobalId = GetMobalIdByStr();
         playerPart = new List<CharacterPart>(GetComponentsInChildren<CharacterPart>());
-        Transform redCircle = transform.FindChild("Effect_targetselected01");
+        Transform redCircle = transform.Find("Effect_targetselected01");
         if (redCircle != null)
             redCircle.gameObject.SetActive(false);
         AddPartEffect();
@@ -1514,7 +1514,7 @@ public class CharacterState : BaseActorController, IStatusHandler, BattleAgent
                 break;
             case Modestatus.Monster:
                 hpBar.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
-                Transform headBuffTrans = transform.FindChild("Headbuff");
+                Transform headBuffTrans = transform.Find("Headbuff");
                 if(headBuffTrans != null)
                     offset = new Vector3(0f, headBuffTrans.localPosition.y, 0f);
                 else

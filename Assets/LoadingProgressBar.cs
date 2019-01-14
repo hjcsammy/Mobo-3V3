@@ -57,8 +57,8 @@ public class LoadingProgressBar : MonoBehaviour {
         //else
         //{
             Transform mytra = transform;
-            mProcess = mytra.FindChild("ProgressBar_liner/up").GetComponent<UISlider>();
-            m_backImg = mytra.FindChild("BG").GetComponent<UISprite>();
+            mProcess = mytra.Find("ProgressBar_liner/up").GetComponent<UISlider>();
+            m_backImg = mytra.Find("BG").GetComponent<UISprite>();
             //m_roleRunImg = mytra.FindChild("UI_jiazaiObjAnchor/UI_jiazai/Control - Colored Slider/LoadRoleAnimations/LoadRoleAnimation").GetComponent<UISprite>();
             //m_roleRunImg.gameObject.SetActive(roleShow);
             //m_showText = mytra.FindChild("UI_jiazaiObjAnchor/UI_jiazai/Label").GetComponent<UILabel>();
@@ -291,7 +291,7 @@ public class LoadingProgressBar : MonoBehaviour {
     public void SetTextInfo()
     {
         //m_proNumText0 = transform.FindChild("Control - Colored Slider/Label").GetComponent<UILabel>();
-        m_proNumText1 = transform.FindChild("ProgressBar_liner/Label1").GetComponent<UILabel>();
+        m_proNumText1 = transform.Find("ProgressBar_liner/Label1").GetComponent<UILabel>();
         //m_proNumText2 = transform.FindChild("Control - Colored Slider/Label2").GetComponent<UILabel>();
     }
     public void SetCurrentNum(int num, int maxNum)

@@ -560,8 +560,8 @@ public class FightTouch : GUIBase
 
     void SetBtnLockStatus(GameObject btn, bool isLock)
     {
-        if (btn.transform.FindChild("Lock"))
-            btn.transform.FindChild("Lock").gameObject.SetActive(isLock);
+        if (btn.transform.Find("Lock"))
+            btn.transform.Find("Lock").gameObject.SetActive(isLock);
         else
             Debug.Log("Can not find lock." + btn.name);
     }

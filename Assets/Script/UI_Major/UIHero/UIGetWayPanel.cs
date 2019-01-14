@@ -26,7 +26,7 @@ public class UIGetWayPanel : GUIBase
     {
         base.Init();
 
-        backPBtn = transform.FindChild("BackPBtn").GetComponent<BoxCollider>();
+        backPBtn = transform.Find("BackPBtn").GetComponent<BoxCollider>();
 
         //返回按钮
         backBtn.onClick = OnBackBtnClick;

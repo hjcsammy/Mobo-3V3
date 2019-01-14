@@ -98,7 +98,7 @@ public class TaskManager
     public DialogItem CurrentShowDialogItem;
     public TaskItem CurrentTaskItem;
 
-    //任务列表 仅用于获取每个NPC上任务的最高级状态 NPCID,TASKID,TASKITEM
+    //任务列表 仅用于获取每个NPC上任务的最胡级状态 NPCID,TASKID,TASKITEM
     //不能接任务列表
     public Dictionary<long, List<TaskItem>> TaskListCantAccept = new Dictionary<long, List<TaskItem>>();
     //未领取任务列表

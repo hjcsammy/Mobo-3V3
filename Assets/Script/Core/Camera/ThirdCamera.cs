@@ -24,7 +24,7 @@ public class ThirdCamera : MonoBehaviour
     public float sensitivity1 = 5f;//灵敏度
 
     public float _maxDistance = 3.0f;//人与摄像机的最大距离
-    public float _maxAngle = -10.0f;//摄像机的最高角度
+    public float _maxAngle = -10.0f;//摄像机的最胡角度
     public float _minDistance = 3.0f;//人与摄像机的最小距离
     public float _minAngle = -10.0f;//摄像机的最低角度界限
 

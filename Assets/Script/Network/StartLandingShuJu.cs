@@ -175,7 +175,7 @@ public class StartLandingShuJu : MonoBehaviour
                     GameObject.Instantiate<GameObject>(Scenectrl);
                 }
             }
-
+             
             prefabName = null;
         }
 

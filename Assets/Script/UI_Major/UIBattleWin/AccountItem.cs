@@ -24,7 +24,7 @@ public class AccountItem : MonoBehaviour
         lvl.text = heroData.lvl + "级";
         icon.spriteName = heroData.node.icon_name;
         exp.value = (float)heroData.exps / heroData.maxExps;
-        exp.transform.FindChild("expLabel").GetComponent<UILabel>().text = "+" + addEXP;
+        exp.transform.Find("expLabel").GetComponent<UILabel>().text = "+" + addEXP;
         border.spriteName = playerData.GetInstance().GetHeroGrade(heroData.grade);
     }
 

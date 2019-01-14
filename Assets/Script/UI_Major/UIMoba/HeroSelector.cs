@@ -12,9 +12,9 @@ public class HeroSelector : MonoBehaviour
     void Awake ()
     {
         if(name == "SpriteBingnv")
-            SpSelfFight = transform.FindChild("Sprite").GetComponent<UISprite>();
+            SpSelfFight = transform.Find("Sprite").GetComponent<UISprite>();
         if(name == "SpriteBingnv_e")
-            SpEnemyFight = transform.FindChild("Sprite").GetComponent<UISprite>();
+            SpEnemyFight = transform.Find("Sprite").GetComponent<UISprite>();
     }
 
     void Start () 

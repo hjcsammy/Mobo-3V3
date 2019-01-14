@@ -174,7 +174,7 @@ public class RunesPanel : MonoBehaviour
 
         if (rune.next_grade == 0)
         {
-            PromptPanel.instance.ShowPrompt("已达最高等级");
+            PromptPanel.instance.ShowPrompt("已达最胡等级");
             return;
         }
 

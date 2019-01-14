@@ -1,7 +1,7 @@
 /*
 文件名（File Name）:   RewardGoodsItem.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  2016-11-7 14:54:36
 */

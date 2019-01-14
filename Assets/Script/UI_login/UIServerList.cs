@@ -1,7 +1,7 @@
 ﻿/*
 文件名（File Name）:   InitLogin.cs
 
-作者（Author）:    #高#
+作者（Author）:    #胡#
 
 创建时间（CreateTime）:  #CreateTime#
 */using UnityEngine;
@@ -28,7 +28,7 @@ public class UIServerList : GUIBase
     private GUISingleSprite recentlyState;
     private Transform serverView;
     private Transform roleView;
-    private GameObject go;//指定区服按钮高亮的GameObject
+    private GameObject go;//指定区服按钮胡亮的GameObject
     private List<ServeData> serverData = new List<ServeData>();
     private object[] ServerDataList;
     public Transform loginEffect;
